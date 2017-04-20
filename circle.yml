@@ -8,4 +8,5 @@ test:
     - mkdir $CIRCLE_TEST_REPORTS/behat
     - ./bin/behat
 dependencies: 
-  pre: - echo "date.timezone = UTC" > /opt/circleci/php/$(phpenv global)/etc/conf.d/timezone.ini
+  pre: 
+    - echo "date.timezone = UTC" > /opt/circleci/php/$(phpenv global)/etc/conf.d/timezone.ini
