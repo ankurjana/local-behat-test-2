@@ -5,7 +5,7 @@ test:
   pre:
     - mv behat.local.yml.sample behat.local.yml
   override:
-    - drush sa
+    - ./bin/drush sa
     - mkdir $CIRCLE_TEST_REPORTS/behat
     - ./bin/behat --format junit --out $CIRCLE_TEST_REPORTS/behat --tags=smoke   
 dependencies: 
