@@ -4,11 +4,10 @@ machine:
 test:
   pre:
     - mv behat.local.yml.sample behat.local.yml
-  override:
-    - ./bin/drush sa
+  override:    
     - mkdir $CIRCLE_TEST_REPORTS/behat
     #- ./bin/behat --format junit --out $CIRCLE_TEST_REPORTS/behat --tags=smoke
-    - ./bin/behat --tags=categorypage   
+    - ./bin/behat --format junit --out $CIRCLE_TEST_REPORTS/behat --tags=categorypage
 dependencies: 
   pre: 
     - echo "date.timezone = UTC" > /opt/circleci/php/$(phpenv global)/etc/conf.d/timezone.ini
