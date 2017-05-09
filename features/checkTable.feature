@@ -6,7 +6,7 @@ Feature: Check sub-categories on category page
     Then I should see the link "<sub-category>"
     Examples:
       | category | sub-category | locale | product-term |
-      | electrical-testing | Battery analyzers1 | en-us | products |
+      | electrical-testing | Battery analyzers | en-us | products |
       | electrical-testing | Clamp meters | en-us | products |
       | electrical-testing | Digital multimeters | en-us | products |
       | electrical-testing | Earth ground | en-us | products |
@@ -14,6 +14,6 @@ Feature: Check sub-categories on category page
       | electrical-testing | Installation testers | en-us | products |
       | electrical-testing | Insulation testers | en-us | products |
       | electrical-testing | Portable Oscilloscopes | en-us | products |
-      | electrical-testing | Power and energy loggets | en-us | products |
-      | electrical-testing | Power quality anlyzers | en-us | products |
+      | electrical-testing | Power and energy loggers | en-us | products |
+      | electrical-testing | Power quality analyzers | en-us | products |
       | test-electrique | Pinces multimètres | fr-fr | produits |
